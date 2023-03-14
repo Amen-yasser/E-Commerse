@@ -1,0 +1,39 @@
+<div class="cart container my-5">
+<h1>Shopping Cart</h1>
+    <div class="row">
+        <div class="col-8 cart-count">
+        </div>
+        <div class="col-4 cart-clear text-end">
+            <span class="btn " (click)="  ClearAllCart()">Clear Your Cart </span>
+        </div>  
+    </div>
+    <div class="row t-headers text-center">
+        <div class="col"><h1>Item</h1></div>
+        <div class="col"><h1>Name</h1></div>
+        <div class="col"><h1>Price</h1></div>
+        <div class="col"><h1>Quantity</h1></div>
+        <div class="col"><h1>Total</h1></div>
+        <div class="col"></div>
+    </div>
+    <div class="row t-content text-center my-2">
+        <div class="row item" *ngFor="let item of cartItems , index as i">
+            <div class="col item-image"><img [src]="url+item.image"></div>
+            <div class="col"><p>{{item.name}}</p></div>
+            <div class="col"><h3>{{item.price | currency}}</h3></div>
+            <div class="col Quantity row">
+                <input #quantity type="number" class="form-control col d-inline-block" min="1" value="1" (change)="getQuantity($event,item.price,i)" [(ngModel)]="item.q">
+            </div>
+            <div class="col"><h3>{{item.q*item.price | currency}}</h3></div>
+            <div class="col " (click)="DeleteProduct(i)"><i class="fas fa-trash-alt text-danger btn"></i></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">Total Price : {{totalPrice| currency}}</div>
+        <div class="col"><span class="btn check ms-auto" (click)="CheckOut()">Check Out</span></div>
+    </div>
+  
+</div>

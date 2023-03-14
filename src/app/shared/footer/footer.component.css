@@ -1,0 +1,74 @@
+/*footer*/
+.footeer
+{
+    padding: 100px 0;
+    background-color: #212529;
+    color:var(--main-color);
+}
+.footeer .site-info h2
+{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.footeer .site-info h2 span:first-child
+{
+
+    font-weight: bold;
+}
+
+.footeer .site-info p
+{
+    line-height: 1.8;
+}
+
+.footeer .site-info a::before
+{
+    font-family: "fontAwesome";
+    content: "\f138";
+    margin-right: 5px;
+}
+.footeer .help-links h2
+{
+    font-weight: normal;
+    margin-bottom: 40px;
+
+}
+.footeer .help-links ul li:hover
+{
+
+    cursor: pointer;
+}
+.footeer .help-links ul li::before
+{
+    font-family: "fontAwesome";
+    content: "\f054";
+    margin-right: 5px;
+
+    font-size: 12px;
+}
+.footeer .contact h2
+{
+    font-weight: normal;
+    margin-bottom: 40px;
+
+}
+.footeer .contact ul
+{
+    margin: 0;
+}
+.footeer .contact ul li
+{
+    margin-bottom: 30px;
+}
+/*footer*/
+/* copy right*/
+.copy
+{
+    border-top: 2px solid black;
+}
+.copy h6
+{
+    padding: 0;
+    margin: 0;
+}
+/* copy right*/

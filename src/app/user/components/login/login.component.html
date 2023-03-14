@@ -1,0 +1,14 @@
+<div class="login">
+      
+        <form [formGroup]="Loginform" (ngSubmit)="Login()">
+            <h1 class="text-center">User Login</h1>
+            <div>
+                <input placeholder="Email" class="form-control" type="email" formControlName="email">
+            </div>
+            <div>
+                <input placeholder="Password" class="form-control" type="password" formControlName="password">
+            </div>
+    
+          <button  [disabled]="Loginform.invalid" type="submit" class="btn ">Login</button>
+        </form>
+</div>

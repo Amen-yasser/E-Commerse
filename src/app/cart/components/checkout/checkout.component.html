@@ -1,0 +1,22 @@
+
+<div class="confirm">
+    <form [formGroup]="Confermform" (ngSubmit)="Confirm()">
+        <h1 class="text-center">Confirmation Cart</h1>
+        <div>
+            <input placeholder="Shipping Address" class="form-control" type="text" formControlName="address">
+        </div>
+        <div>
+            <input placeholder="City" class="form-control" type="text"  formControlName="city">
+        </div>
+        <div>
+            <input placeholder="Zip" class="form-control" type="text" formControlName="zip">
+        </div>
+        <div>
+            <input placeholder="Country" class="form-control" type="text" formControlName="country">
+        </div>
+        <div>
+            <input placeholder="Phone Number" class="form-control" type="text" formControlName="phone">
+        </div>
+      <button [disabled]="Confermform.invalid" type="submit" class="btn ">Confirm</button>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+.t-content
+{
+    border:1px solid #ccc;
+    padding: 10px;
+    max-height:500px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.item
+{
+    align-items: center;
+    justify-items: center center;
+    margin-top: 15px;
+}
+.t-content .item-image img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.cart-clear span,.check
+{
+    background-color: #41b191;
+    color: white;
+    font-weight: bolder;
+}

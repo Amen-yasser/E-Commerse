@@ -1,0 +1,38 @@
+
+.product-details .image
+{
+    background-color:#f0efef;
+    border-radius: 10px;
+    overflow:hidden;
+    height: 500px;
+}
+.product-details .image img
+{
+    display: block;
+    mix-blend-mode: multiply;
+    width: 350px;
+    height: 350px;
+    margin-top: 40%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.p-r{margin-bottom: 20px;}
+.p-r i{color: yellow;}
+
+.price
+{
+    padding: 2px 15px;
+    border: 3px solid rgb(0, 121, 0);
+    font-weight: bolder;
+    color:rgb(0, 121, 0);
+    border-radius: 10px;
+
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed
+{
+    background-color: #f0efef;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,71 @@
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:5
+}
+.carousel button
+{
+    z-index: 10;
+}
+.categories ul
+{
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    margin: 0;
+    padding: 40px;
+}
+.categories ul li{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.item
+{
+    border: 5px double var(--main-color);
+    padding: 10px;
+    border-top-left-radius:30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    max-width:24%;
+    margin: 5px;
+    transition: 0.2s all ease-in-out;   
+
+}
+.item:hover
+{
+    box-shadow: 2px 4px 8px 2px rgb(34, 27, 27);
+    transform: scale(1.1);
+
+}
+.image img
+{
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+.item .desc
+{
+    padding: 10px;
+}
+.offer
+{
+    margin-top: 100px;
+}
+.offer img
+{
+    width: 500px;
+    height: 500px;
+}
+.offer .row
+{
+    align-content: center center;
+    align-items: center;
+}

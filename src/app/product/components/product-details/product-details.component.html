@@ -1,0 +1,31 @@
+<div class="container product-details my-5">
+    <div class="row">
+        <div class="col image"> <img [src]="url+productDetails.image" alt=""> </div>
+        <div class="col disc ">
+            <h2>{{productDetails.name}}</h2>
+            <div class="p-r">
+                <span class="price lead" >{{productDetails.price | currency}}</span> | 
+                <span class="lead"> Rating :<b>{{productDetails.rating}}</b>  <i class='fas fa-star'></i></span>
+            </div>
+            <span class="d-block lead">Color : <b>{{productDetails.color}}</b></span>
+            <hr>
+            <div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Description
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="lead">{{productDetails.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
