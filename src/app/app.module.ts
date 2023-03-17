@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeModule } from './home/home.module';
 import { HomeComponent } from './home/home/home.component';
 import { CartModule } from './cart/cart.module';
+import { CorsModule } from './cors/cors/cors.module';
 
 
 @NgModule({
@@ -28,8 +29,9 @@ import { CartModule } from './cart/cart.module';
     FormsModule,
     ReactiveFormsModule,
     UserModule,
-    CartModule
-  ],
+    CartModule,
+    CorsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

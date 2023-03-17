@@ -61,6 +61,7 @@ totalPrice:any=0;
         product: item._id
       };
     });
+    
     localStorage.setItem('items',JSON.stringify(Items));
     localStorage.setItem('totalPrice',JSON.stringify(this.totalPrice));
     this._Router.navigate(['CheckOut']);

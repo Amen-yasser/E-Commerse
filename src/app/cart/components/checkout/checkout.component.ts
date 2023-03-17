@@ -55,6 +55,8 @@ export class CheckoutComponent implements OnInit {
      this._CartService.createCart(model).subscribe(res=>{
        console.log(res);
      });
+     alert("Order Added :)");
+     
     }
   }
 }
